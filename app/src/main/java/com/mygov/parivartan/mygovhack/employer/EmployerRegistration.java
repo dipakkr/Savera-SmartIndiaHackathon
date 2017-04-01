@@ -62,6 +62,7 @@ public class EmployerRegistration extends AppCompatActivity {
 
         TextView textView = (TextView)findViewById(R.id.emp_title);
         textView.setText(R.string.employer_signup);
+        
 
         progressDialog = new ProgressDialog(this);
 
@@ -127,6 +128,5 @@ public class EmployerRegistration extends AppCompatActivity {
                     }
                 });
     }
-
 }
 
