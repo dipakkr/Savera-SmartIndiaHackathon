@@ -1,0 +1,83 @@
+<resources>
+    <string name="app_name">MyGov Hack</string>
+    <string name="employee">Employee</string>
+    <string name="employer">Employer</string>
+
+    <string name="Email">Email</string>
+    <string name="passoword">Password</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="already_reg">Already registered? Login here </string>
+    <string name="logout"> Logout </string>\
+    <string name="myaccount">My Account</string>
+    <string name="employer_Email">Employer Email</string>
+
+    <string name="name">Name</string>
+    <string name="setting">Settings</string>
+    <string name="share">Share</string>
+    <string name="about">About us</string>
+    <string name="jobs">Jobs</string>
+    <string name="my_profile">My Profile</string>
+
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="Profile">Profile</string>
+    <string name="help">Assist</string>
+    <string name="emp_profile">Employee</string>
+    <string name="employee_name">Employee Name</string>
+    <string name="employee_intro">Your Skills here</string>
+    <string name="employee_location">City</string>
+    <string name="default_name">Your Name</string>
+
+    // Employer Profile Update
+
+    <string name="age">Age</string>
+    <string name="sex">Sex  : </string>
+    <string name="gender">, Gender</string>
+    <string name="aadhaar">Aadhar No.</string>
+    <string name="address">Address : </string>
+    <string name="pincode">Pincode</string>
+    <string name="city">City</string>
+    <string name="state">State</string>
+    <string name="skill">Skills</string>
+    <string name="skill_1">Qualification : </string>
+    <string name="skill_choose">Choose your Skills </string>
+    <string name="update_profile">Update Profile</string>
+    <string name="contact">Contact No.</string>
+    <string name="qalific">Skills and Qualification </string>
+    <string name="qualification">Qualification   :   </string>
+
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="other">Other</string>
+
+    <string name="qual_5">Class 5</string>
+    <string name="qual_6">Class 6</string>
+    <string name="qual_7">Class 7</string>
+    <string name="qual_8">Class 8</string>
+    <string name="qual_9">Class 9</string>
+    <string name="qual_10">Matric</string>
+    <string name="qual_12">Inter(+2)</string>
+    <string name="qual_13">Graduated</string>
+
+    <string name="skill1">Skill_1</string>
+    <string name="skill2">Skill_2</string>
+    <string name="skill3">Skill_3</string>
+    <string name="emp_search_result">People</string>
+    <string name="employer_profile">My Profile</string>
+    <string name="employer_name">Organization Name</string>
+    <string name="employer_intro">Organization Intro Here..</string>
+    <string name="contact_us">Contact Us. </string>
+    <string name="intro">Intro about organization</string>
+
+    <string name="sort_city">Sort By City</string>
+    <string name="search">Search</string>
+    <string name="search_jobs">Search jobs by Skill</string>
+
+    <string name="employee_signup">Employee Registration Portal</string>
+    <string name="employer_signup">Employer Registration Portal</string>
+    <string name="employee_login">Employee Login Portal</string>
+    <string name="employer_login">Employer Login Portal</string>
+
+    <string name="sort_skill">Sort by Skill</string>
+</resources>

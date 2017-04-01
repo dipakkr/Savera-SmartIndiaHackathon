@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="array_list_qualification">
+        <item>@string/qual_5</item>
+        <item>@string/qual_6</item>
+        <item>@string/qual_7</item>
+        <item>@string/qual_8</item>
+        <item>@string/qual_9</item>
+        <item>@string/qual_10</item>
+        <item>@string/qual_12</item>
+        <item>@string/qual_13</item>
+    </string-array>
+</resources>

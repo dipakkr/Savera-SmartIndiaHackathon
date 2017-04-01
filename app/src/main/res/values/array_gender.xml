@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <string-array name="array_gender_option">
+       <item>@string/male</item>
+       <item>@string/female</item>
+       <item>@string/other</item>
+   </string-array>
+</resources>

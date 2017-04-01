@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mygov.parivartan.mygovhack">
+<uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity"/>
+        <activity android:name=".employee.EmployeeRegistration"/>
+        <activity android:name=".employee.EmployeePreUpdateProfile"/>
+        <activity android:name=".employer.EmployerPreUpdateProfile"/>
+
+        <activity android:name=".employer.EmployerRegistration"/>
+
+        <activity android:name=".employee.EmployeeLogin"/>
+
+        <activity android:name=".employer.EmployerLogin"/>
+
+        <activity android:name=".employer.EmployerProfile"
+                  android:label="@string/employer"/>
+
+        <activity android:name=".employee.EmployeeProfile"
+
+                  android:label="@string/emp_profile"/>
+
+        <activity android:name=".employee.EmployeeProfileUpdate"
+                  android:label="@string/update_profile"/>
+
+        <activity android:name=".employer.EmployerProfileUpdate"
+                   android:label="@string/employer_profile"/>
+
+    </application>
+
+</manifest>
