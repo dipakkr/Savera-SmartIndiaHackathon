@@ -7,6 +7,15 @@
     android:fitsSystemWindows="true"
     android:layout_height="match_parent">
 
+    <ImageView
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:src="@drawable/employee"
+        android:id="@+id/imageView"
+        android:layout_marginTop="27dp"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true" />
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -14,10 +23,11 @@
         android:fitsSystemWindows="true"
         android:gravity="center"
         android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
+        android:id="@+id/linearLayout2"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/imageView"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:id="@+id/linearLayout2">
+        android:layout_alignParentStart="true">
 
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
@@ -28,6 +38,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/login_email"
                 android:textSize="23sp"
+                android:drawableLeft="@drawable/mail"
                 android:hint="@string/Email"/>
 
         </android.support.design.widget.TextInputLayout>
@@ -40,6 +51,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/login_pass"
+                android:drawableLeft="@drawable/password"
                 android:textSize="23sp"
                 android:inputType="textPassword"
                 android:hint="@string/passoword"/>
@@ -48,26 +60,26 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:orientation="horizontal"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
             <Button
-                android:layout_width="wrap_content"
-                android:layout_weight="0.5"
-                android:layout_height="wrap_content"
                 android:id="@+id/back"
-                android:layout_gravity="center_horizontal"
-                android:text="Back"/>
-
-            <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.5"
-                android:layout_marginLeft="30dp"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:layout_weight="0.5"
+                android:text="Back" />
+
+            <Button
                 android:id="@+id/bt_login"
-                android:text="@string/login"/>
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:layout_weight="0.5"
+                android:text="@string/login" />
         </LinearLayout>
 
     </LinearLayout>
@@ -79,9 +91,8 @@
         android:textStyle="bold"
         android:textSize="25dp"
         android:textColor="#b94444"
-        android:layout_marginBottom="60dp"
         android:id="@+id/textView2"
-        android:layout_above="@+id/linearLayout2"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
 
