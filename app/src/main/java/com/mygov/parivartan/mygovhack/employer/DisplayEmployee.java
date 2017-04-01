@@ -7,6 +7,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
@@ -30,7 +31,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by deepak on 01-04-2017.
+ * Created by deepak on 02-04-2017.
  */
 
 public class DisplayEmployee extends Fragment {
@@ -39,6 +40,7 @@ public class DisplayEmployee extends Fragment {
     ImageView bt_search;
     ListView listView;
     Spinner spinner_sort;
+    String key = "req_skill1";
 
     private DatabaseReference databaseReference;
     EmployeeAdapter employeeAdapter;
@@ -55,7 +57,7 @@ public class DisplayEmployee extends Fragment {
         et_search = (EditText)view.findViewById(R.id.et_search);
         bt_search = (ImageView) view.findViewById(R.id.bt_search);
         spinner_sort = (Spinner)view.findViewById(R.id.spinner_sort);
-
+        setupSpinner();
 
         final List<EmployeeDetail> employeeDetails = new ArrayList<>();
          employeeAdapter = new EmployeeAdapter(getContext()
@@ -70,13 +72,14 @@ public class DisplayEmployee extends Fragment {
                 if(employeeAdapter != null){
                     employeeAdapter.clear();
                 }
+
                 progressDialog = new ProgressDialog(getContext());
                 progressDialog.setMessage("Searching Jobs");
                 progressDialog.show();
 
                 data = et_search.getText().toString();
 
-                databaseReference.orderByChild("skill1").equalTo(data)
+                databaseReference.orderByChild(key).startAt(data).endAt(data)
                         .addChildEventListener(new ChildEventListener() {
                             @Override
                             public void onChildAdded(DataSnapshot dataSnapshot, String s) {
@@ -86,6 +89,9 @@ public class DisplayEmployee extends Fragment {
                                 employeeAdapter.add(employeeDetail);
                                 progressDialog.dismiss();
 
+                                if(employeeAdapter == null){
+                                    Toast.makeText(getContext(), "No Match Found", Toast.LENGTH_SHORT).show();
+                                }
                             }
 
                             @Override
@@ -108,6 +114,7 @@ public class DisplayEmployee extends Fragment {
 
                             }
                         });
+
                 //If adapter is empty show a toast
                 progressDialog.dismiss();
                 if(employeeAdapter == null){
@@ -117,6 +124,27 @@ public class DisplayEmployee extends Fragment {
             }
         });
         return view;
+    }
+    private void setupSpinner(){
+        ArrayAdapter adapter = ArrayAdapter.createFromResource(getContext(),R.array.array_job_sort,
+                android.R.layout.simple_spinner_item);
+        adapter.setDropDownViewResource(android.R.layout.simple_dropdown_item_1line);
+        spinner_sort.setAdapter(adapter);
+        spinner_sort.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+                key = (String)adapterView.getItemAtPosition(i);
+                if(key.equals(getString(R.string.sort_city))){
+                    key = "city";
+                }else if(key.equals(getString(R.string.sort_skill))){
+                    key = "skill1";
+                }
+            }
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {
+            }
+
+        });
     }
 
     @Override
