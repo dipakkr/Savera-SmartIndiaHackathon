@@ -78,6 +78,7 @@
                 android:layout_height="wrap_content"
                 android:ellipsize="end"
                 android:hint="@string/Email"
+                android:drawableLeft="@drawable/mail"
                 android:maxLines="1" />
 
         </android.support.design.widget.TextInputLayout>
@@ -90,6 +91,7 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/password"
                 android:id="@+id/reg_password"
                 android:ellipsize="end"
                 android:maxLines="1"
@@ -103,7 +105,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="@dimen/activity_horizontal_margin"
             android:textSize="24sp"
             android:id="@+id/register"
             android:text="@string/register"/>
