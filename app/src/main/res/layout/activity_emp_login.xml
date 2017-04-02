@@ -91,7 +91,7 @@
         android:textStyle="bold"
         android:textSize="25dp"
         android:textColor="#b94444"
-        android:id="@+id/textView2"
+        android:id="@+id/textLogin"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 

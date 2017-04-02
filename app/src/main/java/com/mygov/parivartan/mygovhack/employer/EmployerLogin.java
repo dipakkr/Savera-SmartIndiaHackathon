@@ -51,6 +51,9 @@ public class EmployerLogin extends AppCompatActivity {
         mLogin = (Button)findViewById(R.id.bt_login);
         mBack = (Button) findViewById(R.id.back);
 
+        TextView txt = (TextView)findViewById(R.id.textLogin);
+        txt.setText("Employer Login Portal");
+
         progressDialog = new ProgressDialog(this);
         mLogin.setOnClickListener(new View.OnClickListener() {
             @Override
