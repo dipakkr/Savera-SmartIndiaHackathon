@@ -10,6 +10,7 @@ import android.support.v7.app.AppCompatActivity;
  */
 
 public class SplashScreenActivity extends AppCompatActivity {
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,7 +20,7 @@ public class SplashScreenActivity extends AppCompatActivity {
             @Override
             public void run() {
                 try{
-                    Thread.sleep(2500);
+                    Thread.sleep(3000);
                     Intent intent = new Intent(SplashScreenActivity.this,MainActivity.class);
                     startActivity(intent);
                     finish();
@@ -28,9 +29,8 @@ public class SplashScreenActivity extends AppCompatActivity {
                     e.printStackTrace();
                 }
             }
-        }
+          }
         ).start();
     }
-
 }
 

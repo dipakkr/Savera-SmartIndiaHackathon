@@ -24,7 +24,8 @@ import com.mygov.parivartan.mygovhack.R;
 
 public class EmployerPreUpdateProfile extends AppCompatActivity{
 
-    EditText mIntro, mContact, mSkill1, mSkill2, mSkill3, mCity, mName;
+    EditText mIntro, mContact, mSkill1, mCity, mName;
+    //EditText mSkill2, mSkill3;
     Button mUpload;
     private SharedPreferences sharedPreferences;
     private String aadhaar;
@@ -45,8 +46,8 @@ public class EmployerPreUpdateProfile extends AppCompatActivity{
         mIntro = (EditText)findViewById(R.id.et_intro);
         mContact = (EditText)findViewById(R.id.et_contact);
         mSkill1 = (EditText)findViewById(R.id.emp_skill_1);
-        mSkill2 = (EditText)findViewById(R.id.emp_skill_2);
-        mSkill3 = (EditText)findViewById(R.id.emp_skill_3);
+        //mSkill2 = (EditText)findViewById(R.id.emp_skill_2);
+        //mSkill3 = (EditText)findViewById(R.id.emp_skill_3);
         mCity = (EditText)findViewById(R.id.et_city);
         mName = (EditText)findViewById(R.id.et_name);
         mUpload = (Button)findViewById(R.id.upload);
@@ -70,12 +71,14 @@ public class EmployerPreUpdateProfile extends AppCompatActivity{
                 String value_intro = mIntro.getText().toString();
                 String value_contact = mContact.getText().toString();
                 String value_skill1 = mSkill1.getText().toString();
-                String value_skill2 = mSkill2.getText().toString();
-                String value_skill3 = mSkill3.getText().toString();
+
+                //String value_skill2 = mSkill2.getText().toString();
+                //String value_skill3 = mSkill3.getText().toString();
+
                 String value_city = mCity.getText().toString();
 
                 Employer employer = new Employer( value_employer_name,value_intro,value_city,
-                        value_skill1,value_skill2,value_skill3,value_contact);
+                        value_skill1,value_contact);
                 mReference.child(aadhaar).setValue(employer);
                 Toast.makeText(EmployerPreUpdateProfile.this, "Data Uploaded", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(getApplicationContext(),EmployerProfile.class));

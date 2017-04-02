@@ -72,7 +72,6 @@ public class MainActivity extends AppCompatActivity {
                            getBaseContext().getResources().getDisplayMetrics());
 
 
-
                    Intent refresh = new Intent(MainActivity.this, MainActivity.class);
                    startActivity(refresh);
                    finish();
@@ -92,8 +91,8 @@ public class MainActivity extends AppCompatActivity {
                    Intent refresh = new Intent(MainActivity.this, MainActivity.class);
                    startActivity(refresh);
                    finish();
-               }else{
-                   String languageToLoad = ""; // your language
+               }else if(i==3){
+                   String languageToLoad = "ta"; // your language
                    Locale locale = new Locale(languageToLoad);
                    Locale.setDefault(locale);
                    Configuration config = new Configuration();
@@ -102,18 +101,31 @@ public class MainActivity extends AppCompatActivity {
                            getBaseContext().getResources().getDisplayMetrics());
 
 
+                   Intent refresh = new Intent(MainActivity.this, MainActivity.class);
+                   startActivity(refresh);
+                   finish();
+               }else{
+                   String languageToLoad = "en"; // your language
+                   Locale locale = new Locale(languageToLoad);
+                   Locale.setDefault(locale);
+                   Configuration config = new Configuration();
+                   config.locale = locale;
+                   getBaseContext().getResources().updateConfiguration(config,
+                           getBaseContext().getResources().getDisplayMetrics());
+
 
                    Intent refresh = new Intent(MainActivity.this, MainActivity.class);
                    startActivity(refresh);
                    finish();
+
                }
             }
+
             @Override
             public void onNothingSelected(AdapterView<?> adapterView) {
                 Toast.makeText(MainActivity.this, "Please Make Selection", Toast.LENGTH_SHORT).show();
             }
         });
-
     }
 
 
