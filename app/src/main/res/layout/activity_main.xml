@@ -46,4 +46,31 @@
         android:id="@+id/bt_employer"
         android:layout_centerInParent="true"/>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:padding="15dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="102dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#c0420b"
+            android:text="@string/choose_lang" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:id="@+id/lang"
+            android:layout_height="wrap_content">
+
+        </Spinner>
+    </LinearLayout>
+
+
 </RelativeLayout>
