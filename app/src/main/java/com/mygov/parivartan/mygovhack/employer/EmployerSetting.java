@@ -30,7 +30,7 @@ import com.mygov.parivartan.mygovhack.R;
 public class EmployerSetting extends Fragment implements View.OnClickListener {
 
     Button updateProfile, bContact;
-    TextView mName, mIntro, mCity, mSkill1, mContact;
+    TextView mName, mIntro, mCity, mSkill1,mSkill2,mSkill3;
     private static String TAG = EmployerSetting.class.getSimpleName();
     private DatabaseReference mReference;
     private ValueEventListener mValueEventListener;
@@ -55,9 +55,8 @@ public class EmployerSetting extends Fragment implements View.OnClickListener {
         mIntro = (TextView)view.findViewById(R.id.employer_intro);
         mCity = (TextView)view.findViewById(R.id.employer_city);
         mSkill1 = (TextView)view.findViewById(R.id.req_skill1);
-        mContact = (TextView)view.findViewById(R.id.employer_contact);
-        //mSkill2 = (TextView)view.findViewById(R.id.req_skill2);
-        //mSkill3 = (TextView)view.findViewById(R.id.req_skill3);
+        mSkill2 = (TextView)view.findViewById(R.id.req_skill2);
+        mSkill3 = (TextView)view.findViewById(R.id.req_skill3);
         updateProfile.setOnClickListener(this);
 
         aadhaar = pref.getString("uid","");
@@ -78,9 +77,8 @@ public class EmployerSetting extends Fragment implements View.OnClickListener {
                 mCity.setText(employer.city);
                 mIntro.setText(employer.intro);
                 mSkill1.setText(employer.req_skill1);
-                //mContact.setText(employer.mobile);
-                //mSkill2.setText(employer.req_skill2);
-                //mSkill3.setText(employer.req_skill3);
+                mSkill2.setText(employer.req_skill2);
+                mSkill3.setText(employer.req_skill3);
             }
 
             @Override

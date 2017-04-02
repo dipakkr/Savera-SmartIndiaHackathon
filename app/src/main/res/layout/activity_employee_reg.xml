@@ -60,8 +60,9 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/emp_reg_aadhaar"
                 android:maxLength="12"
+                android:drawableLeft="@drawable/aadhaar"
                 android:ellipsize="end"
-                android:maxLines="1"
+                android:maxLines="2"
                 android:inputType="number"
                 android:hint="@string/aadhaar"/>
 

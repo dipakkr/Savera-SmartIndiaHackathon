@@ -117,8 +117,8 @@ public class EmployeeSetting extends Fragment implements View.OnClickListener{
                 mContact.setText(employee.mobile);
                 mQualification.setText(employee.qualification);
                 mTxtSkill1.setText(employee.skill1);
-                //mTxtSkill2.setText(employee.skill2);
-                //mTxtSkill3.setText(employee.skill3);
+                mTxtSkill2.setText(employee.skill2);
+                mTxtSkill3.setText(employee.skill3);
                 empSkill1.setText(employee.skill1);
                 empCity.setText(employee.city);
             }

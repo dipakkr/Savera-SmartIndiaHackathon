@@ -32,7 +32,7 @@ public class EmployeePreUpdateProfile extends AppCompatActivity {
 
     EditText etAadhar, etContact, etCity, etName, etAge;
     EditText skill1;
-    //EditText skill2, skill3;
+    EditText skill2, skill3;
     Spinner mGender, mQualification,mState ;
     String value_gender = null;
     String value_qualification = null;
@@ -70,8 +70,8 @@ public class EmployeePreUpdateProfile extends AppCompatActivity {
         mQualification = (Spinner) findViewById(R.id.qualification_spinner);
         mState = (Spinner)findViewById(R.id.spinner_state);
         skill1 = (EditText)findViewById(R.id.emp_skill_1);
-        //skill2 = (EditText)findViewById(R.id.emp_skill_2);
-        //skill3 = (EditText)findViewById(R.id.emp_skill_3);
+        skill2 = (EditText)findViewById(R.id.emp_skill_2);
+        skill3 = (EditText)findViewById(R.id.emp_skill_3);
 
         //Getting Aadhaar from sharedPreferences
         mUid = sharedPreferences.getString("uid","");
@@ -176,14 +176,14 @@ public class EmployeePreUpdateProfile extends AppCompatActivity {
                 String value_Contact = etContact.getText().toString();
                 String value_city = etCity.getText().toString();
                 String value_skill1 = skill1.getText().toString();
-                //String value_skill2 = skill2.getText().toString();
-                //String value_skill3 = skill3.getText().toString();
+                String value_skill2 = skill2.getText().toString();
+                String value_skill3 = skill3.getText().toString();
 
                 String email = firebaseUser.getEmail();
                 String username = email.split("@")[0];
 
                 Employee employee = new Employee(username,value_name,value_age,value_gender,value_aadhaar,
-                        value_Contact,value_qualification,value_city,value_skill1);
+                        value_Contact,value_qualification,value_city,value_skill1,value_skill2,value_skill3);
 
                 mDatabase.child(mUid).setValue(employee);
                 SharedPreferences.Editor editor = sharedPreferences.edit();

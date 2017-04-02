@@ -92,6 +92,26 @@
                         android:padding="10sp"
                         android:text="@string/skill1" />
 
+                    <TextView
+                        android:id="@+id/req_skill2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_marginStart="@dimen/activity_horizontal_margin"
+                        android:background="@drawable/skill_item_background"
+                        android:padding="10sp"
+                        android:text="@string/skill2" />
+
+                    <TextView
+                        android:id="@+id/req_skill3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_marginStart="@dimen/activity_horizontal_margin"
+                        android:background="@drawable/skill_item_background"
+                        android:padding="10sp"
+                        android:text="@string/skill3" />
+
 
                 </LinearLayout>
 
@@ -139,8 +159,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Contact No.  :"
-                        android:id="@+id/employer_contact"
+                        android:text="City"
                         android:textColor="@color/colorPrimaryDark"
                         android:textSize="18sp" />
 
@@ -158,6 +177,7 @@
 
         <Button
             android:layout_width="match_parent"
+            android:id="@+id/bt_profile_update"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/activity_horizontal_margin"
             android:text="Update Profile" />

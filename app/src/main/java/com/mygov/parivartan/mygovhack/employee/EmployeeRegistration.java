@@ -129,7 +129,7 @@ public class EmployeeRegistration extends AppCompatActivity{
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if(task.isSuccessful()){
                     Employee employee = new Employee(email,"","","","",
-                            "","","","");
+                            "","","","","","");
                     mDatabase.child(aadhaar).setValue(employee);
                     Toast.makeText(EmployeeRegistration.this, "Data Uploaded", Toast.LENGTH_SHORT).show();
                     finish();

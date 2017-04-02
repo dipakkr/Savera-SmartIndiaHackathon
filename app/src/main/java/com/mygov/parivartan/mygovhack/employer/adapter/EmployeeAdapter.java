@@ -53,8 +53,8 @@ public class EmployeeAdapter extends ArrayAdapter<EmployeeDetail> {
         mCity.setText(employeeDetail.getEmp_city());
         mSex.setText(employeeDetail.getEmp_gender());
         mSkill1.setText(employeeDetail.getEmp_skill());
-        //mSkill2.setText(employeeDetail.getEmp_skill2());
-        //mSkill3.setText(employeeDetail.getEmp_skill3());
+        mSkill2.setText(employeeDetail.getEmp_skill2());
+        mSkill3.setText(employeeDetail.getEmp_skill3());
 
         return convertView;
     }
