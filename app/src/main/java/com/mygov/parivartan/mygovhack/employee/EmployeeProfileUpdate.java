@@ -29,6 +29,7 @@ import com.mygov.parivartan.mygovhack.R;
 public class EmployeeProfileUpdate extends AppCompatActivity {
 
     EditText etAadhar, etContact, etCity, etName, etAge;
+    EditText etSalary, etExperience;
     EditText skill1, skill2, skill3;
     Spinner mGender, mQualification,mState ;
     String value_gender = null;
@@ -73,6 +74,8 @@ public class EmployeeProfileUpdate extends AppCompatActivity {
 
         //Set the Value of EditText that is entered earlier
 
+        etSalary = (EditText)findViewById(R.id.salary);
+        etExperience = (EditText)findViewById(R.id.experince);
 
         //Getting Aadhaar from sharedPreferences
         String sname = sharedPreferences.getString("name","");
@@ -183,11 +186,15 @@ public class EmployeeProfileUpdate extends AppCompatActivity {
                 String value_skill2 = skill2.getText().toString();
                 String value_skill3 = skill3.getText().toString();
 
+                String value_salary = etSalary.getText().toString();
+                String value_experience = etExperience.getText().toString();
+
                 String email = firebaseUser.getEmail();
                 String username = email.split("@")[0];
 
                 Employee employee = new Employee(username,value_name,value_age,value_gender,value_aadhaar,
-                        value_Contact,value_qualification,value_city,value_skill1,value_skill2,value_skill3);
+                        value_Contact,value_qualification,
+                        value_city,value_skill1,value_skill2,value_skill3,value_salary,value_experience);
 
                 mDatabase.child(mUid).setValue(employee);
                 SharedPreferences.Editor editor = sharedPreferences.edit();

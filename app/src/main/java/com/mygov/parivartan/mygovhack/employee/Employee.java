@@ -16,6 +16,8 @@ public class Employee {
     public String skill1;
     public String skill2;
     public  String skill3;
+    public String experince;
+    public String salary;
 
 
     public Employee(){
@@ -23,7 +25,8 @@ public class Employee {
     }
 
     public Employee(String username,String empname, String age, String sex, String uid_no,
-                    String mobile, String qualification, String city,String skill1, String skill2,String skill3) {
+                    String mobile, String qualification, String city,String skill1,
+                    String skill2,String skill3,String experince,String salary) {
 
         this.username = username;
         this.empname = empname;
@@ -36,6 +39,8 @@ public class Employee {
         this.skill1 = skill1;
         this.skill2 =skill2;
         this.skill3 = skill3;
+        this.experince = experince;
+        this.salary = salary;
     }
 
     public String getSkill1() {

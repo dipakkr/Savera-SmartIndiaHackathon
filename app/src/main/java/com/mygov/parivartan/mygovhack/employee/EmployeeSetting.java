@@ -50,6 +50,8 @@ public class EmployeeSetting extends Fragment implements View.OnClickListener{
     @Nullable
     TextView mTextName,mTextAge,mAadhaar,mContact,mCity,mSex,mQualification,mEmail;
     TextView mTxtSkill1, mTxtSkill2, mTxtSkill3, empSkill1, empCity;
+    TextView mSalary,mExperience;
+
     SharedPreferences sharedPreferences;
     private FirebaseUser firebaseUser;
     private FirebaseAuth firebaseAuth;
@@ -81,6 +83,11 @@ public class EmployeeSetting extends Fragment implements View.OnClickListener{
         mQualification = (TextView)view.findViewById(R.id.field_qualification);
         imageView = (ImageView)view.findViewById(R.id.imageview);
         imageView.setOnClickListener(this);
+
+
+        mSalary = (TextView)view.findViewById(R.id.txt_salary);
+        mExperience = (TextView)view.findViewById(R.id.txt_experience);
+
 
         mTxtSkill1 = (TextView)view.findViewById(R.id.txt_skill_1);
         mTxtSkill2 = (TextView)view.findViewById(R.id.txt_skill_2);
@@ -121,6 +128,9 @@ public class EmployeeSetting extends Fragment implements View.OnClickListener{
                 mTxtSkill3.setText(employee.skill3);
                 empSkill1.setText(employee.skill1);
                 empCity.setText(employee.city);
+                mExperience.setText(employee.experince);
+                mSalary.setText(employee.salary);
+
             }
 
             @Override

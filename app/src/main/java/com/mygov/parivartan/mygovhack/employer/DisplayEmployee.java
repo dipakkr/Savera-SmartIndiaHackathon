@@ -85,7 +85,8 @@ public class DisplayEmployee extends Fragment {
                             public void onChildAdded(DataSnapshot dataSnapshot, String s) {
                                 Employee emp = dataSnapshot.getValue(Employee.class);
                                 EmployeeDetail employeeDetail = new EmployeeDetail(emp.empname,emp.age,
-                                        emp.sex,emp.city,emp.skill1,emp.skill2,emp.skill3,emp.mobile);
+                                        emp.sex,emp.city,emp.skill1,
+                                        emp.skill2,emp.skill3,emp.mobile,emp.experince,emp.salary);
                                 employeeAdapter.add(employeeDetail);
                                 progressDialog.dismiss();
 

@@ -88,4 +88,5 @@
     <string name="tamil">Tamil</string>
     <string name="telgu">Telgu</string>
     <string name="def">Default</string>
+    <string name="salary">Expected Salary : </string>
 </resources>

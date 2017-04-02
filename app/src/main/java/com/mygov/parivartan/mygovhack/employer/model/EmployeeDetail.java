@@ -13,11 +13,14 @@ public class EmployeeDetail {
     public String emp_skill2;
     public String emp_skill3;
     public String emp_mobile;
+    public String emp_experience;
+    public String emp_salary;
 
     public EmployeeDetail(){
     }
     public EmployeeDetail(String emp_name,String emp_age, String emp_gender,
-                          String emp_city,String emp_skill1,String emp_skill2,String emp_skill3, String emp_mobile){
+                          String emp_city,String emp_skill1,String emp_skill2,
+                          String emp_skill3, String emp_mobile,String emp_experience, String emp_salary){
         this.emp_name = emp_name;
         this.emp_age =emp_age;
         this.emp_city = emp_city;
@@ -26,6 +29,8 @@ public class EmployeeDetail {
         this.emp_skill2 = emp_skill2;
         this.emp_skill3 = emp_skill3;
         this.emp_mobile = emp_mobile;
+        this.emp_salary = emp_salary;
+        this.emp_experience = emp_experience;
     }
 
     public String getEmp_name() {
@@ -64,4 +69,13 @@ public class EmployeeDetail {
     public String getEmp_mobile() {
         return emp_mobile;
     }
+
+    public String getEmp_experience() {
+        return emp_experience;
+    }
+
+    public String getEmp_salary() {
+        return emp_salary;
+    }
+
 }

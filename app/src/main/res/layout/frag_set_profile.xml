@@ -259,7 +259,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/activity_horizontal_margin"
-                    android:text="Previous Work Experience :"
+                    android:text="Work Information : "
                     android:textStyle="bold"
                     android:textColor="@color/colorPrimaryDark"
                     android:textSize="21sp" />
@@ -282,21 +282,24 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="@dimen/activity_horizontal_margin"
-                        android:orientation="vertical"
+                        android:orientation="horizontal"
                         android:padding="5dp">
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Work Place 1 "
-                            android:textSize="20sp" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Details"
-                            android:padding="4dp"
-                            android:textSize="16sp" />
+                            android:text="Previous Experience"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/txt_experience"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:textAlignment="center"
+                            android:text="Experience"/>
+
 
                     </LinearLayout>
 
@@ -314,23 +317,26 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="@dimen/activity_horizontal_margin"
                         android:layout_marginStart="@dimen/activity_horizontal_margin"
-                        android:orientation="vertical"
+                        android:orientation="horizontal"
                         android:padding="8dp">
 
                         <TextView
                             android:id="@+id/textView10"
-                            android:layout_width="match_parent"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Work Place 2 "
+                            android:text="Salary Expected"
                             android:textSize="18sp" />
 
                         <TextView
-                            android:id="@+id/textView12"
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Details"
-                            android:padding="4dp"
-                            android:textSize="15sp" />
+                            android:text="Salary"
+                            android:textStyle="bold"
+                            android:id="@+id/txt_salary"
+                            android:textSize="18sp"
+                            android:textAlignment="center" />
+
+
                     </LinearLayout>
 
                 </LinearLayout>
