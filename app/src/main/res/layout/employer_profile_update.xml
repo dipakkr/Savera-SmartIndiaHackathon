@@ -119,7 +119,7 @@
 
                 </android.support.design.widget.TextInputLayout>
 
-                <android.support.design.widget.TextInputLayout
+                <!--<android.support.design.widget.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/activity_horizontal_margin"
@@ -146,7 +146,7 @@
                         android:hint="@string/skill3" />
 
                 </android.support.design.widget.TextInputLayout>
-
+-->
             </LinearLayout>
 
             <TextView

@@ -14,6 +14,18 @@
         android:layout_height="wrap_content">
 
         <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="30dp"
+            android:src="@drawable/ic_share_black_24dp"
+            android:layout_marginTop="15dp"
+            android:padding="7dp"
+            android:id="@+id/employer_share"
+            android:elevation="8dp"
+            android:background="@drawable/share_back"
+            android:layout_gravity="end" />
+
+        <ImageView
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_gravity="center_horizontal"
@@ -80,24 +92,6 @@
                         android:padding="10sp"
                         android:text="@string/skill1" />
 
-                    <TextView
-                        android:id="@+id/req_skill2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/skill_item_background"
-                        android:padding="10sp"
-                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
-                        android:text="@string/skill2" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/skill3"
-                        android:id="@+id/req_skill3"
-                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
-                        android:layout_marginStart="@dimen/activity_horizontal_margin"
-                        android:background="@drawable/skill_item_background"
-                        android:padding="10sp" />
 
                 </LinearLayout>
 
@@ -145,7 +139,8 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="City :"
+                        android:text="Contact No.  :"
+                        android:id="@+id/employer_contact"
                         android:textColor="@color/colorPrimaryDark"
                         android:textSize="18sp" />
 
@@ -162,7 +157,6 @@
         </android.support.v7.widget.CardView>
 
         <Button
-            android:id="@+id/bt_profile_update"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/activity_horizontal_margin"

@@ -63,6 +63,7 @@ public class EmployerRegistration extends AppCompatActivity {
         TextView textView = (TextView)findViewById(R.id.emp_title);
         textView.setText(R.string.employer_signup);
 
+
         progressDialog = new ProgressDialog(this);
 
         if(mAuth.getCurrentUser()!=null){
@@ -115,7 +116,7 @@ public class EmployerRegistration extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()){
-                            Employer employer = new Employer(email,"","","","","","");
+                            Employer employer = new Employer(email,"","","","");
                             mDatabase.child(aadhaar).setValue(employer);
                             Toast.makeText(EmployerRegistration.this, "Data Uploaded", Toast.LENGTH_SHORT).show();
                             finish();
@@ -127,6 +128,5 @@ public class EmployerRegistration extends AppCompatActivity {
                     }
                 });
     }
-
 }
 

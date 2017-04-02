@@ -68,8 +68,8 @@ public class EmployeeProfileUpdate extends AppCompatActivity {
         mQualification = (Spinner) findViewById(R.id.qualification_spinner);
         mState = (Spinner)findViewById(R.id.spinner_state);
         skill1 = (EditText)findViewById(R.id.emp_skill_1);
-        skill2 = (EditText)findViewById(R.id.emp_skill_2);
-        skill3 = (EditText)findViewById(R.id.emp_skill_3);
+        //skill2 = (EditText)findViewById(R.id.emp_skill_2);
+        //skill3 = (EditText)findViewById(R.id.emp_skill_3);
 
         //Set the Value of EditText that is entered earlier
 
@@ -187,7 +187,7 @@ public class EmployeeProfileUpdate extends AppCompatActivity {
                 String username = email.split("@")[0];
 
                 Employee employee = new Employee(username,value_name,value_age,value_gender,value_aadhaar,
-                        value_Contact,value_qualification,value_city,value_skill1,value_skill2,value_skill3);
+                        value_Contact,value_qualification,value_city,value_skill1/*,value_skill2,value_skill3*/);
 
                 mDatabase.child(mUid).setValue(employee);
                 SharedPreferences.Editor editor = sharedPreferences.edit();
