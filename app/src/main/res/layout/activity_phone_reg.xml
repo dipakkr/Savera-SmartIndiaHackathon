@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:id="@+id/ll"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:id="@+id/text_1"
+            android:text="Verify Your Number"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/text_2"
+            android:layout_below="@+id/text_1"
+            android:layout_marginLeft="5dp"
+            android:text="You will get a code via SMS"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="+91(India)"
+            android:padding="10dp"
+            android:layout_below="@id/text_2"
+            android:layout_marginTop="10dp"
+            android:id="@+id/text_no_info"
+            android:textSize="30dp"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_below="@id/text_no_info"
+            android:padding="10dp"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Phone Number"
+                android:textSize="24dp"
+                android:inputType="number"
+                android:id="@+id/et_phone"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#f0469327"
+        android:id="@+id/bt_submit"
+        android:text="Next"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

@@ -6,6 +6,8 @@
       <module fileurl="file://$PROJECT_DIR$/MyGov-Hack-Version-2.iml" filepath="$PROJECT_DIR$/MyGov-Hack-Version-2.iml" />
       <module fileurl="file://$PROJECT_DIR$/MyGovHack.iml" filepath="$PROJECT_DIR$/MyGovHack.iml" />
       <module fileurl="file://$PROJECT_DIR$/Mygov-Hack.iml" filepath="$PROJECT_DIR$/Mygov-Hack.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Savera-SmartIndiaHackathon.iml" filepath="$PROJECT_DIR$/Savera-SmartIndiaHackathon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
